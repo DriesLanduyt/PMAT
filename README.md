@@ -1,4 +1,4 @@
-![Icon of plug-in](https://www.github.com/DriesLanduyt/PMAT/PMAT/icon.png)
+![Icon of plug-in](/PMAT/icon.png)
 
 #Probabilistic Map Algebra Tool (PMAT)
 
