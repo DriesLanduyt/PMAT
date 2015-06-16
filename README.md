@@ -8,12 +8,12 @@ A Quantum GIS plug-in to apply Bayesian belief network models on raster data
 
 ###Installation
 
-**Step 1.** Save the [PMAT](www.github.com/DriesLanduyt/PMAT/PMAT) folder, present in this repository, to the following directory of Quantum GIS:
+**Step 1.** Save the [PMAT](/PMAT/) folder, present in this repository, to the following directory of Quantum GIS:
 
     ...\apps\qgis\python\plugins\
 
 
-**Step 2.** Copy the `Netica.dll` file which can be found in your local installation of Netica or at the [Norsys website](www.norsys.com) to the following directory of your Quantum GIS installation (you will need the 32bit version for the plug-in):
+**Step 2.** Copy the `Netica.dll` file which can be found in your local installation of Netica or at the [Norsys website](https://www.norsys.com) to the following directory of your Quantum GIS installation (you will need the 32bit version for the plug-in):
 
     ...\bin\     
 
@@ -72,7 +72,7 @@ Select or deselect the `Add map to canvas` checkbox
 
 ###Questions and bug reports
 
-For questions or bug reports, please open an [issue](/issues) in this repository
+For questions or bug reports, please open an [issue](https://github.com/DriesLanduyt/PMAT/issues) in this repository
 
 ###Reference
 
