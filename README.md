@@ -43,7 +43,7 @@ Convert the input maps to GeoTiff format and name them according to the names of
 	numerical value n		statename n
 ```
 
-Examples of correctly formatted GeoTiff files, legend files and network file can be found in the [Example](www.github.com/DriesLanduyt/PMAT/Example) folder
+Examples of correctly formatted GeoTiff files, legend files and network file can be found in the [Example](/Example) folder
 
 **Step 3.** Open Quantum GIS 
 
@@ -51,7 +51,7 @@ via the `Plugins` tab you should be able to open the plug-in. In case the plug-i
  
 **Step 4.** Browse to the proper directory
 
-This directory should contain the input maps (.tif), the legend files (.csv) and the network file (.neta). To test the plugin, use the [Example](www.github.com/DriesLanduyt/PMAT/Example) folder provided in this repository.
+This directory should contain the input maps (.tif), the legend files (.csv) and the network file (.neta). To test the plugin, use the [Example](/Example) folder provided in this repository.
 
 **Step 5.** Browse to the proper network file (.neta)
 
@@ -72,7 +72,7 @@ Select or deselect the `Add map to canvas` checkbox
 
 ###Questions and bug reports
 
-For questions or bug reports, please open an [issue](www.github.com/DriesLanduyt/PMAT/issues) in this repository
+For questions or bug reports, please open an [issue](/issues) in this repository
 
 ###Reference
 
