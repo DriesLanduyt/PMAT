@@ -76,4 +76,4 @@ For questions or bug reports, please [open an issue](https://github.com/DriesLan
 
 ###Reference
 
-* Landuyt, D., Van der Biest, K., Broekx, S., Staes, J., Meire, P., Goethals, P.L.M. (2015). A GIS plug-in for Bayesian belief networks: Towards a transparent software framework to assess and visualise uncertainties in ecosystem service mapping. Enviornmental Modelling and Software 71, 30-38
+* Landuyt, D., Van der Biest, K., Broekx, S., Staes, J., Meire, P., Goethals, P.L.M. (2015). A GIS plug-in for Bayesian belief networks: Towards a transparent software framework to assess and visualise uncertainties in ecosystem service mapping. Enviornmental Modelling and Software 71, 30-38 ([full text](http://www.researchgate.net/publication/278022013_A_GIS_plug-in_for_Bayesian_belief_networks_Towards_a_transparent_software_framework_to_assess_and_visualise_uncertainties_in_ecosystem_service_mapping))
