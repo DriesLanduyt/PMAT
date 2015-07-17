@@ -13,9 +13,16 @@ A Quantum GIS plug-in to apply Bayesian belief network models on raster data
     ...\apps\qgis\python\plugins\
 
 
-**Step 2.** Copy the `Netica.dll` file which can be found in your local installation of Netica or at the [Norsys website](https://www.norsys.com) to the following directory of your Quantum GIS installation (you will need the 32bit version for the plug-in):
+**Step 2.** Copy the `Netica.dll` file which can be found in your local installation of Netica or at the [Norsys website](https://www.norsys.com) to the following directory of your Quantum GIS installation:
 
     ...\bin\     
+    
+Whether you need the 32bit or 64bit version of the `Netica.dll` will depend on the python installation that is used by Quantum GIS. To check this, run the following code in the python console of QGIS:
+
+```
+import struct
+print struct.calcsize("P").8
+```
 
 ###Usage
 
