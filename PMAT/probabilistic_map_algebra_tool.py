@@ -600,7 +600,6 @@ class ABSrunner ( QThread ):
   def getUniques(self,dbf):  
     
     dbf = np.unique(dbf.view(np.dtype((np.void, dbf.dtype.itemsize*dbf.shape[1])))).view(dbf.dtype).reshape(-1, dbf.shape[1])
-	#dbf = np.unique(tuple(x) for x in dbf) # SLOW
     self.progress1()
     return dbf
 
