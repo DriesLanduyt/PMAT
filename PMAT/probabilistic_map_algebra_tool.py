@@ -588,18 +588,18 @@ class ABSrunner ( QThread ):
           
   def combine (self):
     
-    dbf = np.zeros((self.npixels,len(self.reshapedmaps)),dtype = np.int32) 
+    dbf = np.zeros((self.npixels,len(self.reshapedmaps)),dtype = np.uint16)
     for i,rf in enumerate(self.reshapedmaps):
         data = gdal.Open(rf).ReadAsArray()
-        dbf[:,i] = np.concatenate(data)
+        dbf[:,i] = data.ravel()
         self.progress1()
-    np.savetxt("mapdatabase.csv",dbf,fmt='%i',delimiter = ",")
+    np.savetxt("mapdatabase.csv",dbf,fmt='%i',delimiter = ",") # SLOW
     self.progress1()
     return dbf
     
   def getUniques(self,dbf):  
     
-    dbf = np.unique(tuple(x) for x in dbf)
+    dbf = np.unique(dbf.view(np.dtype((np.void, dbf.dtype.itemsize*dbf.shape[1])))).view(dbf.dtype).reshape(-1, dbf.shape[1])
     self.progress1()
     return dbf
 
@@ -754,7 +754,7 @@ class ABSrunner ( QThread ):
   def plotGeotiff(self,name,dataset):
     
     driver = gdal.GetDriverByName( "GTiff" )
-    dst_ds = driver.Create(name,self.ncol,self.nrow,1, gdal.GDT_Float32)
+    dst_ds = driver.Create(name,self.ncol,self.nrow,1, gdal.GDT_UInt16)
     dst_ds.SetGeoTransform(self.geo)
     dst_ds.GetRasterBand(1).WriteArray(dataset)
     dst_ds.FlushCache()        
