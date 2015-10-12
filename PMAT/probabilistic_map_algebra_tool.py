@@ -545,7 +545,7 @@ class ABSrunner ( QThread ):
                 block = dbf[j:]
                 progress = len(block)
             self.translate(block,leg) 
-            self.runModel(outputdata)
+            mes = self.runModel(outputdata)
             if mes != 'ok': 
                 self.errorMessage(mes)
                 return
