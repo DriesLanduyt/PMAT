@@ -678,11 +678,16 @@ class ABSrunner ( QThread ):
             data = csv.reader(m,dialect = 'excel')
             header = data.next()        
             index = [i for i, j in enumerate(header) if j == ot][n]    
-            mapdata = [row[index] for row in data]
+            mapdata = np.array([row[index] for row in data])
+            mapdata = mapdata[mapdata!=ot]
             filename = '_'.join([es,ot]) +'.tif'
             mapdata = np.resize(mapdata,(self.nrow,self.ncol))
             outputmaps.append(filename)
-            self.plotGeotiff(filename,mapdata)
+            if (ot=='Prob')|(ot=='CumProb'):
+                mapdata = mapdata.astype(float)
+                self.plotGeotiff(filename,mapdata*100)
+            else:
+                self.plotGeotiff(filename,mapdata)
             self.progress3()
             m.close()
     return outputmaps

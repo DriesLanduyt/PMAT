@@ -18,6 +18,9 @@ class Ui_BBNToolbox(object):
     def setupUi(self, BBNToolbox):
         BBNToolbox.setObjectName(_fromUtf8("BBNToolbox"))
         BBNToolbox.resize(484, 739)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("icon.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        BBNToolbox.setWindowIcon(icon)
         self.buttonBox = QtGui.QDialogButtonBox(BBNToolbox)
         self.buttonBox.setGeometry(QtCore.QRect(120, 490, 341, 32))
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
