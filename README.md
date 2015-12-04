@@ -21,7 +21,7 @@ Whether you need the 32bit or 64bit version of the `Netica.dll` will depend on t
 
 ```
 import struct
-print struct.calcsize("P").8
+print 8*struct.calcsize("P")
 ```
 
 ###Usage
