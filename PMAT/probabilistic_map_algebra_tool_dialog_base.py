@@ -193,7 +193,7 @@ class Ui_BBNToolbox(object):
         self.checkBox_pmp.setText(QtGui.QApplication.translate("BBNToolbox", "Probability of most probable state", None, QtGui.QApplication.UnicodeUTF8))
         self.groupBox_3.setTitle(QtGui.QApplication.translate("BBNToolbox", "Advanced output maps", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBox_ign.setText(QtGui.QApplication.translate("BBNToolbox", "Ignorance map with threshold probability (%): ", None, QtGui.QApplication.UnicodeUTF8))
-        self.checkBox_cp.setText(QtGui.QApplication.translate("BBNToolbox", "Cummulative probability map (P(output>x)) with threshold: ", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox_cp.setText(QtGui.QApplication.translate("BBNToolbox", "Cumulative probability map (P(output>x)) with threshold: ", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBox_sim.setText(QtGui.QApplication.translate("BBNToolbox", "Sampled map", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBox_allowPassword.setText(QtGui.QApplication.translate("BBNToolbox", "Insert Netica API license (optional):", None, QtGui.QApplication.UnicodeUTF8))
 
