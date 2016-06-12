@@ -5,7 +5,8 @@
 #------------------------------------------------------------------------------
 
 #Universal packages
-from PyQt4.QtCore import QSettings, QTranslator, qVersion, QCoreApplication, QThread, Signal, QMutex, QFileInfo
+from PyQt4.QtCore import QSettings, QTranslator, qVersion, QCoreApplication, QThread, QMutex, QFileInfo
+from PyQt4.QtCore import pyqtSignal as Signal
 from PyQt4.QtGui import QAction, QIcon, QDialog, QDialogButtonBox, QFileDialog, QMessageBox 
 from qgis.core import *
 from qgis.gui import *
