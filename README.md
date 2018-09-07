@@ -35,7 +35,7 @@ Specific model requirements for the plugin include:
 
 **Step 2.** Prepare input maps
 
-Convert the input maps to GeoTiff format and name them according to the names of the corresponding input nodes' names (`nodename.tif`). Prepare for each GeoTiff input map legend files. A legend file assigns a statename to each numerical value (not for values that represent no data) included in the GeoTiff file. The legend file should be named and structured as follows:
+Convert the input maps to GeoTiff format and name them according to the names of the corresponding input nodes' names (`nodename.tif`). Store these files (including the legend files (see below)) in the same folder as the one your network file is in. Prepare for each GeoTiff input map legend files. A legend file assigns a statename to each numerical value (not for values that represent no data) included in the GeoTiff file. The legend file should be named and structured as follows:
 
 `nodenameleg.csv`
 ```
