@@ -170,7 +170,7 @@ class OpenBayesNet():
                     if prob>(ignT/100): ign =  mostprob
                     else: ign = -9999
                 except: 
-                    print 'Zero array returned as belief vector at linenumber: ' + str(linenumber)
+                    #print 'Zero array returned as belief vector at linenumber: ' + str(linenumber)
                     belief = [-9999 for b in belief]                    
                     prob,mostprob,expectedV,stddev,Max,probmax,cumprob,sim,ign = -9999,-9999,-9999,-9999,-9999,-9999,-9999,-9999,-9999
                 linedata = linedata + belief + [prob, mostprob, expectedV, stddev, Max, probmax,cumprob,sim,ign]
